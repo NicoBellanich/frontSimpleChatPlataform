@@ -1,9 +1,8 @@
 import * as React from "react";
 import { Form, Button, Alert, div } from "react-bootstrap";
 
-function SingInForm() {
-  const [toggle, setToggle] = React.useState(false);
-
+function SingInForm(props) {
+  
   return (
     <div>
       <Alert variant="light" className="text-center" style={{ width: "100%" }}>
@@ -19,10 +18,17 @@ function SingInForm() {
         <Button
           variant="primary"
           type="submit"
-          onClick={() => setToggle((toggle) => !toggle)}
         >
           Sing in
         </Button>
+        <Form.Group>
+          <Form.Text
+            className="text-muted"
+            onClick={props.eventHandler}
+          >
+            Don't you have an account?
+          </Form.Text>
+        </Form.Group>
       </Form>
     </div>
   );
