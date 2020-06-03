@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Form, Button, Alert } from "react-bootstrap";
+import { Form, Button, Alert, div } from "react-bootstrap";
 
 function SingUpForm() {
   return (
@@ -20,7 +20,7 @@ function SingUpForm() {
         <Form.Group controlId="formBasicPassword">
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Button variant="primary" type="submit" onClick={alert("trying to registrate")}>
+        <Button variant="primary" type="submit" >
           Sing Up
         </Button>
         <Form.Group>

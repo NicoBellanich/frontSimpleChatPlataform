@@ -2,15 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import SingInForm from './SingIn';
-import SingUpForm from './SingUp'
+import LandingForm from './Landing';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SingInForm></SingInForm>
-    <SingUpForm></SingUpForm>
+    <LandingForm></LandingForm>
   </React.StrictMode>,
   document.getElementById('root')
 );

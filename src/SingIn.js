@@ -1,27 +1,28 @@
 import * as React from "react";
-import { Form, Button, Alert } from "react-bootstrap";
+import { Form, Button, Alert, div } from "react-bootstrap";
 
 function SingInForm() {
+  const [toggle, setToggle] = React.useState(false);
+
   return (
-    <div >
-      <Alert variant="light" className='text-center' style={{width: "100%"}}>
+    <div>
+      <Alert variant="light" className="text-center" style={{ width: "100%" }}>
         <Alert.Heading>Member loguin</Alert.Heading>
       </Alert>
-      <Form className='text-center' style={{width: "100%"}}>
+      <Form className="text-center" style={{ width: "100%" }}>
         <Form.Group controlId="userName">
-          <Form.Control type="userName" placeholder="User Name"/>
+          <Form.Control type="userName" placeholder="User Name" />
         </Form.Group>
         <Form.Group controlId="formBasicPassword">
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Button variant="primary" type="submit" onClick={alert("trying to registrate")}>
+        <Button
+          variant="primary"
+          type="submit"
+          onClick={() => setToggle((toggle) => !toggle)}
+        >
           Sing in
         </Button>
-        <Form.Group>
-          <Form.Text className="text-muted">
-           Do you already have an account?
-          </Form.Text>
-        </Form.Group>
       </Form>
     </div>
   );
