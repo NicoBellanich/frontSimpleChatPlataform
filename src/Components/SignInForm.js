@@ -23,7 +23,7 @@ function SignInForm (props) {
 
   const history = useHistory()
 
-  if (loading) {
+  while (loading) {
     return (
       <div className='DisplaySpinners'>
         <OwnSpinners />
