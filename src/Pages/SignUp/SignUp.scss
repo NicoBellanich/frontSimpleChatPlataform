@@ -1,0 +1,75 @@
+.ContainerDisplayMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e0cf5;
+  border-radius: 19px 19px 19px 19px;
+  -moz-border-radius: 19px 19px 19px 19px;
+  -webkit-border-radius: 19px 19px 19px 19px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 2px 2px 9px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 9px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 9px -4px rgba(0, 0, 0, 0.75);
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  margin-top: initial;
+  margin-left: initial;
+  margin-right: initial;
+  margin-bottom: 6%;
+  box-shadow: 10px;
+}
+
+.buttonSignUp {
+  background-color: #cd4dcc;
+  border: 0px;
+  &:hover {
+    background-color: #cd4dcc;
+  }
+}
+
+.buttonSignUp:focus {
+  background-color: #cd4dcc;
+  border: 0px;
+  outline: none;
+  &:hover {
+    background-color: #cd4dcc;
+  }
+}
+
+.Title {
+  background-color: #7e0cf5;
+  color: #fef8ff;
+}
+
+.witheText {
+  color: #fef8ff;
+  &:hover {
+    color: #fef8ff;
+  }
+}
+
+.DisplayMenu {
+  display: flex;
+  flex-direction: column;
+  color: #fef8ff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin: 5%;
+}
+
+.badge1 {
+  background-color: #f0a500;
+}
+
+.DisplaySpinners {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
